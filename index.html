@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js">
 </head>
 <body>
   <div id="app"></div>
@@ -19,7 +18,11 @@
 	  loadSidebar: true,
 	  subMaxLevel: 2,
     }
-const gitalk = new Gitalk({
+</script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+<script>
+ const gitalk = new Gitalk({
     clientID: '3cc7736e69fc62ace4fa',
     clientSecret: '6b8b3acb8479370c0573957b42ffcf515856c4c2',
     repo: 'gitalk',
