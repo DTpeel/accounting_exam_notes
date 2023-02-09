@@ -1,5 +1,6 @@
-* [前言](/)
+<!-- markdownlint-disable-next-line first-line-heading -->
 
-* 初级会计
-	* [实务](junior_level/实务)
-	* [经济法](junior_level/经济法)
+- [前言](/README.md)
+- 初级会计
+  - [实务](junior-level/实务)
+  - [经济法](junior-level/经济法)
