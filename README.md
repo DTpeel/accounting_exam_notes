@@ -23,7 +23,7 @@
 
 [>>>初级会计经济法](junior_level/经济法)
 
-如需评论在文档下方点击按钮 `login with GitHub` 授权 GitHub 登录后即可评论
+如需评论在文档下方输入用户名点击`发射`按钮后即可发送评论，当然您可以选择登录
 
 若有任何错误，请在 [gitHub issue](https://github.com/DTpeel/accounting-exam-notes/issues) 向我提交
 
