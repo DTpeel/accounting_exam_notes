@@ -11,6 +11,10 @@ jobs:
       - name: Lint files via prettier
         run: |
           yarn && yarn lint
+      - name: Git add and commit
+        run: |
+          git add .
+          git commit -m 'chore(gh-pages): publish site to gh pages'
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v3
