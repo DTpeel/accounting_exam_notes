@@ -8,6 +8,13 @@
 
 本笔记使用 <em style="color:red">CC-BY-4.0 License</em> 作为授权协议，在该License允许范围内可随意使用
 
+## 目录
+
+<a href="junior-level/实务" style="color:green; font-weight: 700">&gt;&gt;&gt;初级会计实务</a>
+
+<a href="junior-level/经济法" style="color:green; font-weight: 700">&gt;&gt;&gt;初级会计经济法</a>
+
+## 简介
 
 本笔记仅为做题记忆之用,根据我个人错题和为牢记内容编写,即代表本文必定会有遗漏，如有遗漏请多见谅。
 
@@ -17,13 +24,7 @@
 
 如需切换文档，PC端用户在侧边目录切换，移动用户点击左下目录按钮打开目录
 
-## 目录
-
-[>>>初级会计实务](junior_level/实务)
-
-[>>>初级会计经济法](junior_level/经济法)
-
-如需评论在文档下方输入用户名点击`发射`按钮后即可发送评论，当然您可以选择登录
+如需评论在文档下方输入用户名和内容后点击`发射`按钮后即可发送评论，当然您可以选择登录
 
 若有任何错误，请在 [gitHub issue](https://github.com/DTpeel/accounting-exam-notes/issues) 向我提交
 
