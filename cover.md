@@ -2,11 +2,11 @@
 
 # 中国初级会计证书学习笔记 <small>v1.0.0</small>
 
-> A magical documentation site generator.
+> 一个用于记录会计考试相关知识点的知识点笔记
 
-- Simple and lightweight
-- No statically built html files
-- Multiple themes
+- 简单易用，高效回忆
+- 知识点简短
+- 含大量记忆口诀
 
 [GitHub](https://github.com/docsifyjs/docsify/)
-[Getting Started](#初级会计笔记)
+[立即阅读](#初级会计笔记)
