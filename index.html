@@ -1,40 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
-</head>
-<body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: '',
-      repo: '',
-	  loadSidebar: true,
-	  subMaxLevel: 2,
-          maxLevel: 4
-    }
-</script>
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
-<script>
- const gitalk = new Gitalk({
-    clientID: '3cc7736e69fc62ace4fa',
-    clientSecret: '6b8b3acb8479370c0573957b42ffcf515856c4c2',
-    repo: 'gitalk',
-    owner: 'DTpeel',
-    admin: ['DTpeel'],
-    // facebook-like distraction free mode
-    distractionFreeMode: false
-  })
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <!-- Theme: Simple Dark -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
+    />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/docsify-plugin-toc@1.3.1/dist/light.css"> -->
+    <link
+      rel="stylesheet"
+      href="//jsd.toshiki.dev/npm/katex@latest/dist/katex.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="//jsd.toshiki.dev/npm/gitalk/dist/gitalk.css"
+    /> -->
+    <link rel="stylesheet" href="/css/custom.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        name: '会计证书笔记',
+        repo: 'https://github.com/DTpeel/accounting-exam-notes',
+        loadSidebar: true,
+        subMaxLevel: 2,
+        maxLevel: 4,
+        coverpage: 'cover.md',
+        requestHeaders: {
+          'cache-control': 'max-age=0',
+        },
 
-  </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-</body>
+        // search
+        search: 'auto', // default
+
+        search: [
+          '/', // => /README.md
+          '/guide', // => /guide.md
+          '/get-started', // => /get-started.md
+          '/zh-cn/', // => /zh-cn/README.md
+        ],
+
+        // complete configuration parameters
+        search: {
+          maxAge: 86400000, // Expiration time, the default one day
+          paths: [], // or 'auto'
+          placeholder: '要搜索什么喵？',
+
+          // Localization
+          placeholder: {
+            '/': '要搜索什么喵？',
+          },
+
+          noData: 'No Results!',
+
+          // Localization
+          noData: {
+            '/': 'No Results',
+          },
+
+          // Headline depth, 1 - 6
+          depth: 2,
+
+          hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+
+          // To avoid search index collision
+          // between multiple websites under the same domain
+          namespace: 'chenskiro.eu.org',
+
+          // Use different indexes for path prefixes (namespaces).
+          // NOTE: Only works in 'auto' mode.
+          //
+          // When initialiazing an index, we look for the first path from the sidebar.
+          // If it matches the prefix from list, we switch to the corresponding index.
+          pathNamespaces: '/',
+
+          //   toc: {
+          //   tocMaxLevel: 5,
+          //   target: 'h2, h3, h4, h5, h6',
+          //   ignoreHeader:  ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
+          // },
+        },
+
+        count: {
+          language: '', // default:english|chinese
+        },
+        waline: {
+          // Required example：https://your-domain.vercel.app
+          serverURL: 'https://acc.comment.chenskiro.eu.org',
+          // enable pageview count
+          pageview: true,
+          lang: 'zh',
+          // placeholder: '捧ぐる祈りの光~★',
+          locale: {
+            placeholder:
+              '来发评论喵？～(∠・ω< )⌒☆​\n昵称，邮箱和网址都不用填哦~',
+            submit: '发射',
+            requiredMeta: ['nick'],
+          },
+          // ...
+          // don't support custom `el` and `path`
+        },
+        copyCode: {
+          buttonText: '📝',
+          errorText: '❌',
+          successText: '✅ ',
+        },
+      };
+    </script>
+    <script>
+      if (CONFIG.waline.serverURL) {
+        vendorJs(
+          'waline',
+          function () {
+            var options = Object.assign({}, CONFIG.waline);
+            options = Object.assign(options, LOCAL.waline || {});
+            options.el = '#comments';
+            options.pathname = LOCAL.path;
+            options.pjax = pjax;
+            options.lazyload = lazyload;
+
+            new Waline(options);
+
+            setTimeout(function () {
+              positionInit(1);
+              postFancybox('.waline-container');
+            }, 1000);
+          },
+          window.Waline
+        );
+      }
+      const locale = {
+        placeholder: '捧ぐる祈りの光~★',
+      };
+    </script>
+
+    <!-- <script src="//jsd.toshiki.dev/npm/docsify/lib/plugins/gitalk.min.js"></script>
+    <script src="//jsd.toshiki.dev/npm/gitalk/dist/gitalk.min.js"></script>
+    <script>
+      const gitalk = new Gitalk({
+        clientID: "3cc7736e69fc62ace4fa",
+        clientSecret: "6b8b3acb8479370c0573957b42ffcf515856c4c2",
+        repo: "gitalk",
+        owner: "DTpeel",
+        admin: ["DTpeel"],
+        // facebook-like distraction free mode
+        distractionFreeMode: false,
+      });
+    </script> -->
+    <!-- Docsify v4 -->
+    <script src="//jsd.toshiki.dev/npm/docsify@4"></script>
+    <!-- plguins -->
+    <script src="//jsd.toshiki.dev/npm/katex@latest/dist/katex.min.js"></script>
+    <script src="//jsd.toshiki.dev/npm/marked@4"></script>
+
+    <!-- CDN files for docsify-katex -->
+    <script src="//jsd.toshiki.dev/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+    <!-- or <script src="//jsd.toshiki.dev/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
+
+    <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
+    <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
+    <script src="//jsd.toshiki.dev/npm/docsify/lib/plugins/search.min.js"></script>
+    <!-- <script src="https://unpkg.com/docsify-plugin-toc@1.3.1/dist/docsify-plugin-toc.min.js"></script> -->
+    <script src="https://unpkg.com/docsify-copy-code@2"></script>
+    <!-- zoom image plugin -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+    <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
+    <script src="https://unpkg.com/docsify-waline@2/docsify-waline.min.js"></script>
+  </body>
 </html>
