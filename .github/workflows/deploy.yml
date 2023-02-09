@@ -13,8 +13,13 @@ jobs:
           yarn && yarn lint
       - name: Git add and commit
         run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git checkout -b gh-pages
           git add .
           git commit -m 'chore(gh-pages): publish site to gh pages'
+          git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          git push -f origin gh-pages
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v3
