@@ -16,6 +16,7 @@ jobs:
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor }}@users.noreply.github.com"
           git checkout -b gh-pages
+          echo author=chenskiro> .env
           git add .
           git commit -m 'chore(gh-pages): publish site to gh pages'
           git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
