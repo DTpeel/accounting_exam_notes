@@ -4,7 +4,7 @@
 
 > 笔记仍在施工
 
-笔者：chenskiro 
+笔者：chenskiro [&gt;&gt;&gt;个人博客](chenskiro.com)
 
 本笔记使用 <em style="color:red">CC-BY-4.0 License</em> 作为授权协议，在该License允许范围内可随意使用
 
