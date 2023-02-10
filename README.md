@@ -10,9 +10,9 @@
 
 ## 目录
 
-<a href="https://www.chenskiro.eu.org/#/junior-level/实物" style="color:#66ccff; font-weight: 700">&gt;&gt;&gt;初级会计实务</a>
+<a href="https://www.chenskiro.com/#/junior-level/实物" style="color:#66ccff; font-weight: 700">&gt;&gt;&gt;初级会计实务</a>
 
-<a href="https://www.chenskiro.eu.org/#/junior-level/经济法" style="color:#66ccff; font-weight: 700">&gt;&gt;&gt;初级会计经济法</a>
+<a href="https://www.chenskiro.com/#/junior-level/经济法" style="color:#66ccff; font-weight: 700">&gt;&gt;&gt;初级会计经济法</a>
 
 ## 简介
 
