@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/DTpeel/accounting-exam-notes",
   "devDependencies": {
-    "prettier": "2.8.7"
+    "prettier": "2.8.8"
   }
 }
