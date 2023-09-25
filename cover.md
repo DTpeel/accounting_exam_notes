@@ -5,7 +5,7 @@
 > 一个用于记录会计考试相关知识点的知识点笔记
 
 - 简单易用，高效回忆
-- 知识点简短
+- 大量知识点
 - 含大量记忆口诀
 
 [GitHub](https://github.com/docsifyjs/docsify/)

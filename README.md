@@ -1,4 +1,4 @@
-# 初级会计笔记
+# 会计笔记
 
 > 注:本笔记并不适合零基础用户
 
@@ -8,11 +8,11 @@
 
 本笔记使用 <em style="color:red">CC-BY-4.0 License</em> 作为授权协议，在该License允许范围内可随意使用
 
+由于通过测试，原初级会计笔记已被归档并停止更新
+
 ## 目录
 
-<a href="https://acc.chenskiro.com/#/junior-level/实物" style="color:#66ccff; font-weight: 700">&gt;&gt;&gt;初级会计实务</a>
-
-<a href="https://acc.chenskiro.com/#/junior-level/经济法" style="color:#66ccff; font-weight: 700">&gt;&gt;&gt;初级会计经济法</a>
+财务成本管理
 
 ## 简介
 
