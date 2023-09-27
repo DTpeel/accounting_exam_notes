@@ -9,4 +9,4 @@
 - 含大量记忆口诀
 
 [GitHub](https://github.com/chenskiro/accounting-exam-notes)
-[立即阅读](#)
+[立即阅读](##目录)

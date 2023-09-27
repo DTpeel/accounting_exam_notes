@@ -6,7 +6,7 @@
 
 笔者：chenskiro <a href="https://www.skiro.link" style="color:#66ccff; font-weight: 700">&gt;&gt;&gt;个人博客</a>(摆烂中)
 
-本笔记使用 <em style="color:red">CC-BY-4.0 License</em> 作为授权协议，在该License允许范围内可随意使用
+本笔记使用 <em style="color:red">CC Attribution 4.0 International license</em> 作为授权协议，在该License允许范围内可随意使用
 
 由于通过测试，原初级会计笔记已被归档并停止更新
 
