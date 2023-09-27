@@ -4,7 +4,7 @@
 
 > 笔记仍在施工
 
-笔者：chenskiro <a href="https://www.chenskiro.com" style="color:#66ccff; font-weight: 700">&gt;&gt;&gt;个人博客</a>(摆烂中)
+笔者：chenskiro <a href="https://www.skiro.link" style="color:#66ccff; font-weight: 700">&gt;&gt;&gt;个人博客</a>(摆烂中)
 
 本笔记使用 <em style="color:red">CC-BY-4.0 License</em> 作为授权协议，在该License允许范围内可随意使用
 
@@ -12,7 +12,11 @@
 
 ## 目录
 
-财务成本管理
+- 财务成本管理
+  - [财务管理基本概述](cpa/财务成本管理/1、财务管理基本概述.md)
+  - [财务报表分析和财务预测](cpa/财务成本管理/2、财务报表分析和财务预测.md)
+  - [价值评估基础](cpa/财务成本管理/3、价值评估基础.md)
+
 
 ## 简介
 
@@ -33,4 +37,5 @@
 
 ## License 
   
-[CC-BY-4.0 license](LICENSE)
+[CC Attribution 4.0 International license](https://github.com/chenskiro/accounting-exam-notes/blob/main/LICENSE)
+

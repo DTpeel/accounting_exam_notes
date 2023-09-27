@@ -8,5 +8,5 @@
 - 大量知识点
 - 含大量记忆口诀
 
-[GitHub](https://github.com/docsifyjs/docsify/)
-[立即阅读](/)
+[GitHub](https://github.com/chenskiro/accounting-exam-notes)
+[立即阅读](#)
