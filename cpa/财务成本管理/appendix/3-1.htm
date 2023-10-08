@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.15.4/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.15.4/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.15.4/dist/index.js"></script><script>(()=>{setTimeout(()=>{const{markmap:M,mm:ge}=window,me=new M.Toolbar;me.attach(ge);const fe=me.render();fe.setAttribute("style","position:absolute;bottom:20px;right:20px"),document.body.append(fe)})})()</script><script>((F,I,R,H)=>{const X=F();window.mm=X.Markmap.create("svg#mindmap",(I||X.deriveOptions)(H),R)})(()=>window.markmap,null,{"type":"root","depth":0,"content":"","children":[{"type":"heading","depth":1,"payload":{"lines":[0,1]},"content":"预期值","children":[{"type":"heading","depth":2,"payload":{"lines":[1,2]},"content":"概率：加权平均","children":[{"type":"heading","depth":3,"payload":{"lines":[2,3]},"content":"对象：收益率","children":[]},{"type":"heading","depth":3,"payload":{"lines":[3,4]},"content":"权数：概率","children":[]}]},{"type":"heading","depth":2,"payload":{"lines":[4,5]},"content":"历史：简单平均","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[6,7]},"content":"方差","children":[{"type":"heading","depth":2,"payload":{"lines":[7,8]},"content":"概率：加权平均","children":[{"type":"heading","depth":3,"payload":{"lines":[8,9]},"content":"对象：偏差的平方","children":[]},{"type":"heading","depth":3,"payload":{"lines":[9,10]},"content":"权数：概率","children":[]}]},{"type":"heading","depth":2,"payload":{"lines":[10,11]},"content":"总体方差：简单平均","children":[]},{"type":"heading","depth":2,"payload":{"lines":[11,12]},"content":"样本方差：简单修正平均","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[14,15]},"content":"标准差","children":[{"type":"heading","depth":2,"payload":{"lines":[15,16]},"content":"方差开平方","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[16,17]},"content":"变异系数","children":[{"type":"heading","depth":2,"payload":{"lines":[17,18]},"content":"标准差/预期值","children":[]}]}],"payload":{}},null)</script>
+</body>
+</html>
